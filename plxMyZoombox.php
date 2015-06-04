@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin plxZoombox
+ * Plugin plxMyZoombox
  *
  **/
-class plxZoombox extends plxPlugin {
+class plxMyZoombox extends plxPlugin {
 
 	/**
-	 * Constructeur de la classe plxZoombox
+	 * Constructeur de la classe plxMyZoombox
 	 *
 	 * @param	default_lang	langue par défaut utilisée par PluXml
 	 * @return	null
@@ -54,7 +54,7 @@ class plxZoombox extends plxPlugin {
 	 * @author	Maguire Cyril
 	 **/
 	public function addZoomboxCss() {
-		echo "\t".'<link rel="stylesheet" type="text/css" href="'.PLX_PLUGINS.'plxZoombox/zoombox/zoombox.css" />'."\n";
+		echo "\t".'<link rel="stylesheet" type="text/css" href="'.PLX_PLUGINS.'plxMyZoombox/zoombox/zoombox.css" />'."\n";
 	}
 	/**
 	 * Méthode qui ajoute le fichier javascript de Zoombox
@@ -66,10 +66,10 @@ class plxZoombox extends plxPlugin {
 		echo "\n".'
 		<script type="text/javascript">
 		/* <![CDATA[ */
-		!window.jQuery && document.write(\'<script  type="text/javascript" src="'.PLX_PLUGINS.'plxZoombox/zoombox/jquery-1.8.2.min.js"><\/script>\');
+		!window.jQuery && document.write(\'<script  type="text/javascript" src="'.PLX_PLUGINS.'plxMyZoombox/zoombox/jquery-1.8.2.min.js"><\/script>\');
 		/* !]]> */
 		</script>
-		<script type="text/javascript" src="'.PLX_PLUGINS.'plxZoombox/zoombox/zoombox.js"></script>
+		<script type="text/javascript" src="'.PLX_PLUGINS.'plxMyZoombox/zoombox/zoombox.js"></script>
 		<script type="text/javascript">
 			jQuery(function($){
 				$(\'a.zoombox\').zoombox();
